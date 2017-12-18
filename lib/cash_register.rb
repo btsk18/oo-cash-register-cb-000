@@ -14,6 +14,7 @@ class CashRegister
     i = 0
     until i >= quantity do
       self.items << title
+      i += 1
     end
   end
 
