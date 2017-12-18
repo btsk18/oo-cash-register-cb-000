@@ -11,7 +11,8 @@ class CashRegister
 
   def add_item(title, price, quantity=1)
     self.total += price * quantity
-    quantity.each do |i|
+    i = 0
+    until i >= quantity do
       self.items << title
     end
   end
