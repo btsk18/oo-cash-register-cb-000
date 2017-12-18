@@ -11,7 +11,9 @@ class CashRegister
 
   def add_item(title, price, quantity=1)
     self.total += price * quantity
-    self.items << title
+    quantity.each {
+      self.items << title
+    } 
     binding.pry
   end
 
