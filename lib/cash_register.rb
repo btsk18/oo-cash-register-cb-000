@@ -21,7 +21,7 @@ class CashRegister
     discount == 0 ? "There is no discount to apply." : "After the discount, the total comes to $#{discounted_total}."
   end
 
-  def items
-    @items
-  end
+  # def items
+  #   @items
+  # end
 end
