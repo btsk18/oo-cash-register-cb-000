@@ -17,4 +17,8 @@ class CashRegister
     discounted_total = self.total -= discount.to_i
     discount == 0 ? "There is no discount to apply." : "After the discount, the total comes to $#{discounted_total}."
   end
+
+  def items
+
+  end
 end
