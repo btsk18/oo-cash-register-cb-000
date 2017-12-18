@@ -12,6 +12,7 @@ class CashRegister
   def add_item(title, price, quantity=1)
     self.total += price * quantity
     self.items << title
+    binding.pry
   end
 
   def apply_discount
@@ -20,7 +21,5 @@ class CashRegister
     discount == 0 ? "There is no discount to apply." : "After the discount, the total comes to $#{discounted_total}."
   end
 
-  # def items
-  #   @items
-  # end
+
 end
