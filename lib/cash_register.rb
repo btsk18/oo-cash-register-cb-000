@@ -6,4 +6,7 @@ class CashRegister
     @total = 0
   end
 
+  def method
+  end
+
 end
